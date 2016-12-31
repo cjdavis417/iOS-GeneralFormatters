@@ -13,6 +13,7 @@
 		67D5C8A81E1832B600DD840C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D5C8A71E1832B600DD840C /* Assets.xcassets */; };
 		67D5C8AB1E1832B600DD840C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D5C8A91E1832B600DD840C /* LaunchScreen.storyboard */; };
 		67D5C8B61E1832B600DD840C /* iOS_GeneralFormattersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5C8B51E1832B600DD840C /* iOS_GeneralFormattersUITests.swift */; };
+		67D5C8C11E1832E000DD840C /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5C8C01E1832E000DD840C /* Formatters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		67D5C8B11E1832B600DD840C /* iOS-GeneralFormattersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-GeneralFormattersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D5C8B51E1832B600DD840C /* iOS_GeneralFormattersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_GeneralFormattersUITests.swift; sourceTree = "<group>"; };
 		67D5C8B71E1832B600DD840C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D5C8C01E1832E000DD840C /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				67D5C8A71E1832B600DD840C /* Assets.xcassets */,
 				67D5C8A91E1832B600DD840C /* LaunchScreen.storyboard */,
 				67D5C8AC1E1832B600DD840C /* Info.plist */,
+				67D5C8C01E1832E000DD840C /* Formatters.swift */,
 			);
 			path = "iOS-GeneralFormatters";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D5C8C11E1832E000DD840C /* Formatters.swift in Sources */,
 				67D5C8A31E1832B600DD840C /* ViewController.swift in Sources */,
 				67D5C8A11E1832B600DD840C /* AppDelegate.swift in Sources */,
 			);
