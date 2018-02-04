@@ -11,29 +11,52 @@ import Foundation
 
 class Formatters {
     
-    // formats an Date to a user friendly date string
+    // formats an NSDate to a user friendly date string
     func formattedDate(_ formatDate: Date, style: String) -> String {
         let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = DateFormatter.Style.none
         
-        if style == "long" {
+        switch style {
+        case "full":
+            dateFormatter.dateStyle = DateFormatter.Style.full
+        case "long":
             dateFormatter.dateStyle = DateFormatter.Style.long
-        } else if style == "medium" {
+        case "medium":
             dateFormatter.dateStyle = DateFormatter.Style.medium
-        } else if style == "none" {
+        case "short":
+            dateFormatter.dateStyle = DateFormatter.Style.short
+        case "none":
             dateFormatter.timeStyle = DateFormatter.Style.none
+        default:
+            dateFormatter.dateStyle = DateFormatter.Style.full
         }
+       
         return dateFormatter.string(from: formatDate)
     }
     
-    // formats Date to a user friendly time string
-    func formattedTime(_ formatTime: Date) -> String {
+    // formats and NSDate to a user friendly time string
+    func formattedTime(_ formatTime: Date, style: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = DateFormatter.Style.none
-        dateFormatter.timeStyle = DateFormatter.Style.medium
+        
+        switch style {
+        case "full":
+            dateFormatter.timeStyle = DateFormatter.Style.full
+        case "long":
+            dateFormatter.timeStyle = DateFormatter.Style.long
+        case "medium":
+            dateFormatter.timeStyle = DateFormatter.Style.medium
+        case "short":
+            dateFormatter.timeStyle = DateFormatter.Style.short
+        default:
+            dateFormatter.timeStyle = DateFormatter.Style.full
+        }
+        
         return dateFormatter.string(from: formatTime)
     }
     
-    // converts integer to "hour : minute : second"
+    // returns string of hour: minute: seconds from a integer
+    // Int() -> "00:00:00"
     func formattedTimer(_ duration: Int) -> String {
         let second = duration % 60
         let minute = (duration / 60) % 60
@@ -41,7 +64,18 @@ class Formatters {
         return String(format: "%02d:%02d:%02d", hour, minute, second)
     }
     
+    // returns a Double to a string
+    // Double() -> "00:00:00"
+    func formattedTimerDouble(_ duration: Double) -> String {
+        let intDur = Int(duration)
+        let second = intDur % 60
+        let minute = (intDur / 60) % 60
+        let hour = intDur / 3600
+        return String(format: "%02d:%02d:%02d", hour, minute, second)
+    }
+    
     // turn a time string into an Integer of value second
+    // "00:00:00" -> Int()
     func timerToInt(_ textTime: String) -> Int {
         var intTime = 0
         let separators = CharacterSet(charactersIn: ":")
@@ -54,7 +88,9 @@ class Formatters {
         return intTime
     }
     
-    // formats a string of format of date to a Date
+    // convers a string to a Date()
+    // the string first should look just like the Date() format.
+    // "YYYY-MM-dd hh:mm:ss zzzz" to Date()
     func stringToDate(_ strDate: String) -> Date {
         let userCalendar = Calendar.current
         
@@ -64,15 +100,15 @@ class Formatters {
         return dateFormatter.date(from: strDate)!
     }
     
-    // converts an Date to a String of same format
-    func dateToString(_ dateDate: Date) -> String {
+    //  converts a Date() to a String of same format as Date()
+    func dateToString(_ nsdateDate: Date) -> String {
         let userCalender = Calendar.current
         let dateFormatter = DateFormatter()
         dateFormatter.calendar = userCalender
-        return dateFormatter.string(from: dateDate)
+        return dateFormatter.string(from: nsdateDate)
     }
     
-    // compiles two Date strings to one of type Date
+    // compiles two Date strings to one of type NSDate
     func compileDate(_ date: String, time: String) -> String {
         let range1 = date.characters.index(date.startIndex, offsetBy: 10)..<date.endIndex
         let range2 = time.startIndex..<time.characters.index(time.startIndex, offsetBy: 11)
@@ -117,6 +153,34 @@ class Formatters {
         return "something went wrong"
     }
     
+    // i'm questioning this one.
+    func bSameDate(date1: Date, date2: Date) -> Bool {
+        var bIsSameDate: Bool!
+        let userCalendar = Calendar.current
+        let dateFormatter = DateFormatter()
+        dateFormatter.calendar = userCalendar
+        dateFormatter.dateStyle = .full
+        let firstDate = dateFormatter.string(from: date1)
+        let secondDate = dateFormatter.string(from: date2)
+        print("fist: \(firstDate), second: \(secondDate)")
+        if firstDate == secondDate {
+            print(firstDate)
+            print(secondDate)
+            bIsSameDate = true
+        } else {
+            bIsSameDate = false
+        }
+        return bIsSameDate
+    }
+    
+    // This computes an end date from the start Date and Duration
+    // start Date() + duration = end Date()
+    func autoWOEnd(_ start: Date, duration: String) -> Date {
+        let dur = Double(timerToInt(duration))
+        let endDate = start.addingTimeInterval(dur)
+        
+        return endDate
+    }
 }
 
 
