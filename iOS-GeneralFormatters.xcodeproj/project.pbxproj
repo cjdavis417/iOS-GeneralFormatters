@@ -12,7 +12,6 @@
 		67D5C8A61E1832B600DD840C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D5C8A41E1832B600DD840C /* Main.storyboard */; };
 		67D5C8A81E1832B600DD840C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D5C8A71E1832B600DD840C /* Assets.xcassets */; };
 		67D5C8AB1E1832B600DD840C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D5C8A91E1832B600DD840C /* LaunchScreen.storyboard */; };
-		67D5C8B61E1832B600DD840C /* iOS_GeneralFormattersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5C8B51E1832B600DD840C /* iOS_GeneralFormattersUITests.swift */; };
 		67D5C8C11E1832E000DD840C /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5C8C01E1832E000DD840C /* Formatters.swift */; };
 		67E2BB5520278FEB001DDAF8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67E2BB5420278FEB001DDAF8 /* README.md */; };
 /* End PBXBuildFile section */
@@ -36,8 +35,6 @@
 		67D5C8AA1E1832B600DD840C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D5C8AC1E1832B600DD840C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D5C8B11E1832B600DD840C /* iOS-GeneralFormattersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-GeneralFormattersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67D5C8B51E1832B600DD840C /* iOS_GeneralFormattersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_GeneralFormattersUITests.swift; sourceTree = "<group>"; };
-		67D5C8B71E1832B600DD840C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D5C8C01E1832E000DD840C /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		67E2BB5420278FEB001DDAF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +62,6 @@
 			children = (
 				67E2BB5420278FEB001DDAF8 /* README.md */,
 				67D5C89F1E1832B600DD840C /* iOS-GeneralFormatters */,
-				67D5C8B41E1832B600DD840C /* iOS-GeneralFormattersUITests */,
 				67D5C89E1E1832B600DD840C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,15 +87,6 @@
 				67D5C8C01E1832E000DD840C /* Formatters.swift */,
 			);
 			path = "iOS-GeneralFormatters";
-			sourceTree = "<group>";
-		};
-		67D5C8B41E1832B600DD840C /* iOS-GeneralFormattersUITests */ = {
-			isa = PBXGroup;
-			children = (
-				67D5C8B51E1832B600DD840C /* iOS_GeneralFormattersUITests.swift */,
-				67D5C8B71E1832B600DD840C /* Info.plist */,
-			);
-			path = "iOS-GeneralFormattersUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D5C8B61E1832B600DD840C /* iOS_GeneralFormattersUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
