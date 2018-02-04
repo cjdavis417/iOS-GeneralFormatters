@@ -1,6 +1,6 @@
 # iOS-General Formatters
 
-### This library was started with date formatters I've used in my own projects.
+### This library was started with formatters I've used in my own projects.
 ### I'll add more formatters as I progress.
 
 
