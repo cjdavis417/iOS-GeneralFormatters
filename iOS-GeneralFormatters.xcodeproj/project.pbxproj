@@ -14,6 +14,7 @@
 		67D5C8AB1E1832B600DD840C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D5C8A91E1832B600DD840C /* LaunchScreen.storyboard */; };
 		67D5C8B61E1832B600DD840C /* iOS_GeneralFormattersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5C8B51E1832B600DD840C /* iOS_GeneralFormattersUITests.swift */; };
 		67D5C8C11E1832E000DD840C /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5C8C01E1832E000DD840C /* Formatters.swift */; };
+		67E2BB5520278FEB001DDAF8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67E2BB5420278FEB001DDAF8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		67D5C8B51E1832B600DD840C /* iOS_GeneralFormattersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_GeneralFormattersUITests.swift; sourceTree = "<group>"; };
 		67D5C8B71E1832B600DD840C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D5C8C01E1832E000DD840C /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		67E2BB5420278FEB001DDAF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		67D5C8941E1832B600DD840C = {
 			isa = PBXGroup;
 			children = (
+				67E2BB5420278FEB001DDAF8 /* README.md */,
 				67D5C89F1E1832B600DD840C /* iOS-GeneralFormatters */,
 				67D5C8B41E1832B600DD840C /* iOS-GeneralFormattersUITests */,
 				67D5C89E1E1832B600DD840C /* Products */,
@@ -186,6 +189,7 @@
 			files = (
 				67D5C8AB1E1832B600DD840C /* LaunchScreen.storyboard in Resources */,
 				67D5C8A81E1832B600DD840C /* Assets.xcassets in Resources */,
+				67E2BB5520278FEB001DDAF8 /* README.md in Resources */,
 				67D5C8A61E1832B600DD840C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +418,7 @@
 				67D5C8BC1E1832B600DD840C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67D5C8BD1E1832B600DD840C /* Build configuration list for PBXNativeTarget "iOS-GeneralFormattersUITests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				67D5C8BF1E1832B600DD840C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
