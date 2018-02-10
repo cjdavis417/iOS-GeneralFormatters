@@ -3,7 +3,7 @@
 //  iOS-GeneralFormatters
 //
 //  Created by Christopher Davis on 12/31/16.
-//  Copyright © 2018 Monkey Face LLC. All rights reserved.
+//  Last edited on 2/10/18
 //
 
 import Foundation
